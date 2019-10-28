@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8" />
+        <style>
+            header{
+                background-color: #02918c;
+                color: white; /* 글씨 색깔은 상속 된다. */  
+                }
+                header>h1>span:nth-child(2){
+                    color: #cfc91d;
+                }
+                header li{
+                    float: left;
+                    list-style: none;
+                    padding: 0px 10px; /* 안쪽 여백 : 상하 좌우 */
+                }
+                .clear{
+                    clear: both;
+                    height: 0px;
+                    overflow: hidden;
+                }
+                header>h1{
+                    float: left;
+                    margin: 0px;
+                }
+                header>nav{
+                    float: right;
+                }
+                header ul{
+                    margin: 10px 0px;
+                }
+                #main_visual{
+                    background-image: url("image/layout2_visual.jpg");
+                    /* height: 400px; */
+                    /* background-size: auto 100%; 가로 세로 */
+                    background-size: cover; /* 커버 */
+                    background-repeat: no-repeat;
+                    /* repeat, no-repeat 반복 없음, repeat-x 가로로 반복, repeat-y 세로로 반복
+                    반복하다라는 뜻을 가지고 있고 배경을 반복을 어떤 방식으로 할건지 */
+                    background-color: black;
+                    background-position: 50% 50%;
+                    /* o% 최소 100% 최대 더 큰 수를 쓰면 밖으로 나가게 됌 */
+                    
+                    color: white;
+                    text-align: center; /* 글자 가운데 정렬 */
+                    padding: 100px 0px;
+                }
+                #main_visual>h2{
+                    width: 900px;
+                    margin: 10px auto; /* 상하 좌우 */
+                    letter-spacing: 20px; /* 글자 사이 간격 */
+                    font-size: 40px;
+                }
+                #title_top{
+                    font-size: 25px;
+                }
+                #title_bottom{
+                    font-size: 15px;
+                }
+                #main_visual>img{
+                    margin-top: 130px;
+                }
+                section{
+                    text-align: center;
+                }
+                section>h3{
+                    color: #02918c;
+                    font-weight: normal;
+                    font-size: 30px;
+                }
+                section>ul>li{
+                    float: left;
+                    list-style: none;
+                    width: 25%; /* 25%는 4개로 나눈 것 33.3%는 3개로 나눈 것과 같다 */
+                }
+                section>p{
+                    width: 650px;
+                    margin: 0px auto; /* 상하 좌우 */
+                }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <h1>
+                    <span>MY</span><span>POLIO</span>
+                </h1>
+                
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About me</li>
+                        <li>Services</li>
+                        <li>My work</li>
+                        <li>Contact me</li>
+                    <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </header>
+            <div id="main_visual">
+                <div id="title_top">Lorem ipsum dolor sit iusmod tempor</div>
+                <h2>INCIDIDUNT BORE</h2>
+                <div id="title_bottom">Orem ipsum dolor sit amet, consectetur</div>
+                <img src="./image/layout2_button.jpg" />
+            </div>
+            <section>
+                <h3>ABOUT ME</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur 
+                    adipisicing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea 
+                    commodo consequat duis aute irure dolor.
+                </p>
+                <ul>
+                    <li>
+                        <img src="./image/layout2_icon1.jpg" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, 
+                                sedo eiusmod tempor incidi et 
+                                dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon2.jpg" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, 
+                                    sedo eiusmod tempor incidi et 
+                                    dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon3.jpg" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, 
+                                        sedo eiusmod tempor incidi et 
+                                        dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="./image/layout2_icon4.jpg" />
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>onsectetur adipisicing elit, 
+                                            sedo eiusmod tempor incidi et 
+                                            dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </section>
+            <section>content2</section>
+        </div>
+    </body>
+</html>
