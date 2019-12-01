@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>free layout</title> 
+        <!-- 타이틀 나중에 변경하기 -->
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0px;
+            }
+            .main{
+                background-color: #c77822;
+            }
+            header>nav>ul>li{
+                float: right;
+                list-style: none;
+                padding: 35px 15px 0px 15px;
+                font-size: 13px;
+            }
+            header>nav>ul{
+                padding: 0px 20px 0px 0px;
+                margin: 0px;
+            }
+            header>h1{
+                margin: 0px;
+                padding: 20px 30px;
+                font-size: 40px;
+                float: left;
+            }
+            #wrap{
+                min-width: 1200px;
+                max-width: 1920px; /* full HD*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #main_visual>#main_image>img{
+                width: calc(100% - 130px - 130px);
+                margin: 0px;
+                padding: 40px 0px;
+            }
+            #main_visual{
+                text-align: center;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+            #main_visual>#main_text>h2{
+                font-size: 80px;
+                margin: 0px;
+                width: 100%;
+                letter-spacing: 20px;
+                /* height: 700px; */
+                /* padding: 324px 0px; */
+            }
+            #main_visual>#main_text{
+                float: left;
+                width: 50%;
+                padding: 252px 0px;
+            }
+            #main_visual>#main_image{
+                float: right;
+                margin: 0px;
+                width: 50%;
+            }
+            section{
+                text-align: center;
+            }
+            section>h3{
+                font-weight: bold;
+                font-size: 30px;
+                margin: 0px;
+                padding: 100px 0px 20px 0px;
+            }
+            #first_image{
+                padding: 50px 0px 100px 0px;
+            }
+            #first_image>h3{
+                color: #c77822;
+            }
+            #second_wri>h3{
+                color: beige;
+                font-weight: bold;
+                font-size: 30px;
+                margin: 0px;
+                padding: 100px 0px 20px 0px;
+            }
+            section>p{
+                margin: 0px;
+                padding: 0px 0px 50px 0px;
+            }
+            section>#per_list>li{
+                display: inline-block;
+                list-style: none;
+                width: calc(25% - (1px / 4 * 3) - 35px - 35px);
+                padding: 5px;
+            }
+            section>#per_list>li>img{
+                display: inline; /* ing 태그의 기본모습 - 인라인형 */
+                width: 100%;
+            }
+
+            .content_part{
+                width: 300px;
+                float: left; /*왼쪽 기준으로 둥둥 떠있게*/
+                margin: 10px;
+                /* margin-border-padding-content-padding-border-margin */
+            }
+
+            section>#content{
+                width: 640px;
+                margin-left: auto;
+                margin-right: auto;
+                /* 블록형 태그의 가운데 정렬법 */
+            }
+
+            .content_part>img{
+                width: 300px;
+                height: 450px;
+            }
+
+            .content_part dt{
+                font-size: 15px;
+                font-weight: bolder;
+            }
+
+            .content_part dd{
+                margin: 0px;
+                font-size: 13px;
+            }
+
+            .bc{
+                background-color: #c77822;
+            }
+
+            footer ul{
+                padding: 0px;
+            }
+            footer ul>li{
+                list-style: none;
+                float: left
+            }
+            /* 
+            footer>ul:nth-child(1)>li{
+                margin-left: 10px;
+                margin-right: 10px
+            } 
+            */
+            footer{
+                background-color: #c77822;
+                color: #000;
+                font-size: 12px;
+                padding: 50px 50px 10px 50px;
+            }
+            #footer_div{
+                float: left;
+            }
+
+            #footer1>li{
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 1px #975610;
+            }
+            #footer1>li:nth-child(5){
+                border: none;
+            }
+
+            #footer_div>p{
+                padding-left: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="index2.html">index</a>
+        <a href="layout1.html">layout1.html</a>
+        <a href="layout2.html">layout2.html</a>
+        <a href="layout3.html">layout3.html</a>
+        <div id="wrap">
+            <div class="main">
+                <header>
+                        <h1>B.R</h1>
+
+                        <nav>
+                            <ul>
+                                <li>SEARCH</li>
+                                <li>CART</li>
+                                <li>MYPAGE</li>
+                                <li>SHOW</li>
+                                <li>NOTICE</li>
+                                <div class="clear"></div>
+                            </ul>
+                        </nav>
+                        <div class="clear"></div>
+                </header>
+                 
+                <div id="main_visual">
+                    <div id="main_text">
+                        <h2>BROWN.</h2>
+                    </div>
+                    <div id="main_image">
+                        <img src="./image/main_visual.jpg" alt="main_visual">
+                    </div> 
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <section id="first_image">
+                    <h3>Perfume</h3>
+                    <p>
+                        The garden was perfumed with the smell of flowers. <br />
+                        You can show, hear, feel and taste.
+                    </p>
+                    <ul id="per_list">
+                        <li>
+                            <img src="./image/per_1.jpg" />
+                        </li>
+                        <li>
+                            <img src="./image/per_2.jpg" />
+                        </li>
+                        <li>
+                            <img src="./image/per_3.jpg" />
+                        </li>
+                        <li>
+                            <img src="./image/per_4.jpg" />
+                        </li>
+                    </ul>
+            </section>
+
+            <div class="bc">
+                <section id="product_list">
+                    <h3>2019 F / W</h3>
+                    <p>The garden was perfumed with the smell of flowers. <br />
+                        Gather various scents around us to make one perfect fragrance. <br />
+                        You are in this mood with a fragrance.
+                    </p>
+                    <div id="content">
+                        <div class="content_part">
+                            <img src="./image/2019_1.jpg" />
+                            <dl>
+                                <dt>
+                                    Fragrances
+                                </dt>
+                                <dd>
+                                    36.2$
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_part">
+                            <img src="./image/2019_2.jpg" />
+                            <dl>
+                                <dt>
+                                    Mood
+                                </dt>
+                                <dd>
+                                    38.9$
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </section>
+
+                <section id="product_list">
+                        <div id="content">
+                            <div class="content_part">
+                                <img src="./image/2019_3.jpg" />
+                                <dl>
+                                    <dt>
+                                        Stone
+                                    </dt>
+                                    <dd>
+                                        35.8$
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="content_part">
+                                <img src="./image/2019_5.jpg" />
+                                <dl>
+                                    <dt>
+                                        Moons
+                                    </dt>
+                                    <dd>
+                                        42.3$
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                    </section>
+            </div>
+
+            <footer>
+                <div id="footer_div">
+                    <ul id="footer1">
+                        <li>NOTICE</li>
+                        <li>SHOW</li>
+                        <li>MYPAGE</li>
+                        <li>CART</li>
+                        <li>SEARCH</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>ⓒ 2019 BROWN. digital publishing design2 All Right Reserved.</p>
+                    <p>
+                        design by. 2019221017 Kim chohee 
+                    </p>
+                </div>
+                <div class="clear"></div>
+            </footer>
+        </div>
+    </body>
+</html>
