@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>자기소개</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                margin: 0px;
+            }
+            #main_visual{
+                background-color: #BFAD93;
+            }
+            #wrap{
+                min-width: 1200px;
+                max-width: 1920px; /* full HD*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #main_visual>#main_text{
+                float: left;
+                width: 50%;
+                padding: 213px 0px;
+            }
+            #main_visual>#main_image{
+                float: right;
+                margin: 0px 30px;
+                height: 600px;
+            }
+            #main_visual>#main_text>h1{
+                font-size: 80px;
+                margin: 10px 60px;
+                color: #a85223;
+            }
+            #main_visual>#main_text>h2{
+                font-size: 40px;
+                margin: 10px 60px;
+                color: #a85223;
+            }
+            section{
+                text-align: center;
+            }
+            section>h3{
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0px;
+                padding: 200px 0px 20px 0px;
+                /* color: #a85223; */
+            }
+            section>#introduce>li{
+                display: inline-block;
+                list-style: none;
+                width: calc(20% - (1px / 4 * 3) - 35px - 35px);
+                padding: 5px;
+            }
+            section>#introduce>li>img{
+                display: inline; /* ing 태그의 기본모습 - 인라인형 */
+                width: 100%;
+            }
+            .clear{
+                clear: both;
+                height: 0px;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+                <header>
+                    <div id="main_visual">
+                        <div id="main_text">
+                            <h2>You can say</h2>
+                            <h1>Perfect Choice</h1>
+                        </div>
+                        <div id="main_image">
+                            <img src="./dmd image/main_image2.png" alt="main_image">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </header>
+
+                <section id="first">
+                    <h3>안녕하세요. 저는 커뮤니케이션 디자인과 김초희입니다.</h3>
+                    <p></p>
+                    <ul id="introduce">
+                        <li>
+                            <img src="./dmd image/image_1.jpg" alt="product_img1"/>
+                        </li>
+                        <li>
+                            <h4>#끊임없이 탐구하는</h4>
+                            <p>
+                                항상 궁금해하는 호기심을 가진 디자이너가 되고 싶습니다. 
+                                다른 사람들보다 한 발 더 앞서는 사람이 되기 위해서는
+                                작은 것 하나에도 끊임없이 질문해야 한다고 생각합니다.
+                            </p>
+                        </li>
+                        <li>
+                            <h4>#안정보다 불안정을</h4>
+                            <p>
+                                안정한 상태에서는 새로운 생각과 변화를 추구할 수 없다고 생각합니다.
+                                항상 변화를 두려워하지 않고 받아들이는 사람이 되고 싶습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <img src="./dmd image/운명13 복사본.jpg" alt="product_img3"/>
+                        </li>
+                        <li>
+                            <h4>#안정보다 불안정을</h4>
+                            <p>
+                                안정한 상태에서는 새로운 생각과 변화를 추구할 수 없다고 생각합니다.
+                                항상 변화를 두려워하지 않고 받아들이는 사람이 되고 싶습니다.
+                            </p>
+                        </li>
+                    </ul>
+                    <div>
+                    </div>
+                </section>
+            <footer>
+
+            </footer>
+        </div>
+
+    </body>
+</html>
