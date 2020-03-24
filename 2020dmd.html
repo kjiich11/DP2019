@@ -12,7 +12,7 @@
             }
             #wrap{
                 min-width: 1200px;
-                max-width: 1920px; /* full HD*/
+                max-width: 1920px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -53,13 +53,53 @@
                 padding: 5px;
             }
             section>#introduce>li>img{
-                display: inline; /* ing 태그의 기본모습 - 인라인형 */
+                display: inline; 
                 width: 100%;
+            }
+            #second{
+                margin: 200px 100px;
+            }
+            #second>article{
+                float: left;
+                width: calc(50% - (1px / 4 * 3) - 35px - 35px);
+                margin: 30px;
+            }
+            #second p{
+                margin: 0px 50px;
             }
             .clear{
                 clear: both;
                 height: 0px;
                 overflow: hidden;
+            }
+            footer ul{
+                padding: 0px;
+            }
+            footer ul>li{
+                list-style: none;
+                float: left
+            }
+            footer{
+                background-color: #BFAD93;
+                color: #000;
+                font-size: 12px;
+                padding: 10px 50px 10px 50px;
+            }
+            #footer_div{
+                float: left;
+            }
+
+            #footer1>li{
+                padding-left: 10px;
+                padding-right: 10px;
+                border-right: solid 1px #975610;
+            }
+            #footer1>li:nth-child(5){
+                border: none;
+            }
+
+            #footer_div>p{
+                padding-left: 10px;
             }
         </style>
     </head>
@@ -83,39 +123,77 @@
                     <p></p>
                     <ul id="introduce">
                         <li>
-                            <img src="./dmd image/image_1.jpg" alt="product_img1"/>
+                            <img src="./dmd image/fi_image.png" alt="product_img1"/>
                         </li>
                         <li>
-                            <h4>#끊임없이 탐구하는</h4>
-                            <p>
-                                항상 궁금해하는 호기심을 가진 디자이너가 되고 싶습니다. 
-                                다른 사람들보다 한 발 더 앞서는 사람이 되기 위해서는
-                                작은 것 하나에도 끊임없이 질문해야 한다고 생각합니다.
-                            </p>
+                            <img src="./dmd image/si_image.png" alt="product_img1"/>
                         </li>
                         <li>
-                            <h4>#안정보다 불안정을</h4>
-                            <p>
-                                안정한 상태에서는 새로운 생각과 변화를 추구할 수 없다고 생각합니다.
-                                항상 변화를 두려워하지 않고 받아들이는 사람이 되고 싶습니다.
-                            </p>
+                            <img src="./dmd image/f_image.png" alt="product_img3"/>
                         </li>
                         <li>
-                            <img src="./dmd image/운명13 복사본.jpg" alt="product_img3"/>
+                            <img src="./dmd image/s_image.png" alt="product_img3"/>
                         </li>
                         <li>
-                            <h4>#안정보다 불안정을</h4>
-                            <p>
-                                안정한 상태에서는 새로운 생각과 변화를 추구할 수 없다고 생각합니다.
-                                항상 변화를 두려워하지 않고 받아들이는 사람이 되고 싶습니다.
-                            </p>
+                            <img src="./dmd image/fo_image.png" alt="product_img3"/>
                         </li>
                     </ul>
                     <div>
                     </div>
                 </section>
-            <footer>
 
+                <section id="second">
+                    <article>
+                        <h4>#안정보다 불안정을</h4>
+                        <p>
+                            안정한 상태에서는 새로운 생각과 변화를 추구할 수 없다고 생각합니다.
+                            항상 변화를 두려워하지 않고 받아들이는 사람이 되고 싶습니다.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>#끊임없이 탐구하는</h4>
+                        <p>
+                            항상 궁금해하는 호기심을 가진 디자이너가 되고 싶습니다. 
+                            다른 사람들보다 한 발 더 앞서는 사람이 되기 위해서는
+                            작은 것 하나에도 끊임없이 질문해야 한다고 생각합니다.
+                        </p>
+                    </article>
+                    <div class="clear"></div>
+                </section>
+
+                <style>
+                    .Hello{
+                        background-color: #BFAD93;
+                        position: static;
+                        position: absolute;
+                        top: 500px;
+                        right: 0px;
+                        width: 100px;
+                        height: 200px;
+                        position: fixed;
+                    }
+                </style>
+                
+                <div class="Hello">
+                    Hello
+                </div>
+
+            <footer>
+                <div id="footer_div">
+                    <ul id="footer1">
+                        <li>2019-1</li>
+                        <li>2019-2</li>
+                        <li>2020-1</li>
+                        <li>ADD</li>
+                        <li>SEARCH</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <p>ⓒ 2019221017 Kim.c.h digital media design2.</p>
+                    <p>
+                        design by. 2019221017 Kim chohee 
+                    </p>
+                </div>
+                <div class="clear"></div>
             </footer>
         </div>
 
